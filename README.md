@@ -1,7 +1,11 @@
 
 # My gruvbox hyprland dots
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8XzThdEOsp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/f97189a4-a817-446a-876b-96fc1717df00
+
+
+
 
 I assembled a rice with gruvbox theme
 
