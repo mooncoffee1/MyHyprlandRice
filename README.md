@@ -9,6 +9,13 @@ https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/f97189a4-a817-4
 
 I assembled a rice with gruvbox theme
 
+# Images 
+
+![image](https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/419f6c7c-9a86-4a29-a500-e7415f77ac85)
+![hyprRice](https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/e1ab6eb7-cfcc-4241-bdb3-71cf522de97b)
+
+
+
 
 ## Installation
 
