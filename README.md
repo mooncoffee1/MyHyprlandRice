@@ -1,6 +1,8 @@
 
 # My gruvbox hyprland dots
 
+
+
 I assembled a rice with gruvbox theme
 
 
