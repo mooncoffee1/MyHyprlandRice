@@ -1,0 +1,1 @@
+/home/ananas/.local/share/omf/themes/starship/fish_prompt.fish
