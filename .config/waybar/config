@@ -10,7 +10,7 @@
     "margin-bottom":-11,
     //"margin-top":5,
     "modules-left": ["wlr/workspaces"],
-    "modules-right": ["custom/spotify","memory","network","custom/cycle_wall","pulseaudio" ,"backlight", "battery","tray"],
+    "modules-right": ["custom/spotify","memory","custom/cycle_wall","network","pulseaudio" ,"backlight", "battery","tray"],
     "modules-center": ["clock"],
     // Modules configuration
 
@@ -75,18 +75,17 @@
             "warning": 50,
             "critical": 20
         },
-        "format": "{icon} {capacity}%",
-        "format-charging": "{icon} {capacity}%",
-        "format-plugged": "{icon} {capacity}%",
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% 󰂅",
+        "format-plugged": "{capacity}% {icon}",
          "format-good": "", // An empty format will hide the module
          "format-full": "󰁹",
-         "format-charging": "󰂅",
         "format-icons": ["󰂎","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
         "on-click": "sh .config/rofi/powermenu/type-1/powermenu.sh",
     },
     "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-bluetooth": "{icon}  {volume}%",
+        "format": "{volume}% {icon}",
+        "format-bluetooth": " {volume}% {icon}",
         "format-bluetooth-muted": "婢  muted",
         "format-muted": "󰖁 muted",
         "format-icons": {
@@ -99,7 +98,7 @@
             "default": ["󰕿", "󰖀", "󰕾"]
         },
         "on-click-right": "pavucontrol",
-      "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+      "on-click": ".config/hypr/scripts/changevolume mute",
     },
     "network": {
          "interface": "wlan0",
