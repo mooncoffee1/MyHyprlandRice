@@ -1,14 +1,7 @@
 
 # My gruvbox hyprland dots
 
-
-https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/f97189a4-a817-446a-876b-96fc1717df00
-
-
-https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/055d4b7b-4b0a-47d1-ba31-05738ee7f1af
-
-
-
+https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/bb4d0350-52c8-400c-b2bc-79531b54847e
 
 
 I assembled a rice with gruvbox theme
