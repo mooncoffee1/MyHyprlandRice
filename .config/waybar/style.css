@@ -3,6 +3,20 @@
     font-size: 14px;
 }
 
+@define-color dark                  #3c3836;
+@define-color blue                  #458588;
+@define-color green                 #98971A;
+@define-color green2                #B8BB26;
+@define-color yellow                #FABD2F;
+@define-color red                   #FB4934;
+@define-color magenta               #D3869B;
+@define-color aqua                  #689D6A;
+@define-color lightblue             #83A598;
+@define-color white                 #EBDBB2;
+@define-color black                 #282828;
+
+
+
 window#waybar {
     background-color: transparent;
 }
@@ -17,14 +31,14 @@ window#waybar {
 
 #workspaces button {
     box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
-    background-color: #d0bc9d;
+    background-color: @white;
     border-radius: 15px;
     margin-right: 10px;
     padding-top: 4px;
     padding-bottom: 2px;
     padding-right: 10px;
     font-weight: bolder;
-    color: #32302f;
+    color: @black;
 }
 
 #workspaces button.active {
@@ -33,10 +47,11 @@ window#waybar {
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
     padding-left: 20px;
     padding-bottom: 3px;
-    background: linear-gradient(45deg, #ffaec1, #d3869b);
+    background: linear-gradient(45deg, @green2, @lightblue);
     animation: gradient 40s ease infinite;
     background-size: 300% 300%;
-    color: #fdf1d5;
+    color: @black;
+    font-weight: bolder;
 }
 
 @keyframes gradient {
@@ -72,16 +87,17 @@ window#waybar {
 #mpd {
     padding: 0 10px;
     border-radius: 15px;
-    background-color: #cdd6f4;
-    color: #32302f;
+    background-color: @green;
+    color: @black;
     box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
+    font-weight: bolder;
 }
 
 #custom-cycle_wall {
-    background: #d0bc9d;
+    background: @red;
     color: #141111;
     background-size: 500% 500%;
     font-weight: bolder;
@@ -90,9 +106,9 @@ window#waybar {
 }
 
 #clock {
-    background: linear-gradient(45deg, #689d6a, #8ec07c);
+    background: linear-gradient(45deg, @lightblue, @green2);
     margin-right: 25px;
-    color: #ebdbb2;
+    color: @black;
     background-size: 300% 300%;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.577);
     animation: gradient 20s ease infinite;
@@ -105,13 +121,13 @@ window#waybar {
 
 #battery.charging,
 #battery.plugged {
-    background-color: #a6ddd4;
+    background-color: @lightblue;
     color: #32302f;
 }
 
 #battery {
-    background-color: #fff;
-    color: rgb(133, 192, 166);
+    background-color: @green2;
+    color: @black;
     font-weight: bolder;
     font-size: 15px;
     padding-left: 15px;
@@ -120,7 +136,7 @@ window#waybar {
 
 @keyframes blink {
     to {
-        background-color: #f9e2af;
+        background-color: #689D6A;
         color: #96804e;
     }
 }
@@ -136,11 +152,11 @@ window#waybar {
 }
 
 #cpu {
-    background: #458588;
+    background: @magenta;
     background-size: 300% 300%;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
     /* background-color: #b4befe; */
-    color: #ebdbb2;
+    color: @black;
 }
 
 #memory {
@@ -155,6 +171,8 @@ window#waybar {
 
 #backlight {
     color: #101212;
+    background-color: @yellow;
+    font-weight: bolder;
 }
 
 #network {
@@ -181,7 +199,7 @@ window#waybar {
 
 #network.linked,
 #network.wifi {
-    background-color: #8ec07c;
+    background-color: @aqua;
     color: #32302f;
 }
 
@@ -190,21 +208,24 @@ window#waybar {
 }
 
 #pulseaudio {
-    background-color: #fab387;
-    color: #32302f;
+    background-color: @blue;
+    color: @dark;
     font-weight: bolder;
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
+    background-color: @blue;
+    font-weight: bolder;
 }
 
 #custom-media {
     color: #66cc99;
+    font-weight: bolder;
 }
 
 #custom-media.custom-spotify {
     background-color: #66cc99;
+    font-weight: bolder;
 }
 
 #custom-media.custom-vlc {
@@ -222,7 +243,7 @@ window#waybar {
 }
 
 #tray {
-    background-color: #d3869b;
+    background-color: @black;
 }
 
 #tray > .passive {
@@ -231,7 +252,7 @@ window#waybar {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
+    background-color: @red;
 }
 
 #idle_inhibitor {

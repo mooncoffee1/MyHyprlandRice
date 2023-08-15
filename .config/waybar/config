@@ -10,7 +10,7 @@
     "margin-bottom":-11,
     //"margin-top":5,
     "modules-left": ["wlr/workspaces"],
-    "modules-right": ["custom/spotify","memory","custom/cycle_wall","network","pulseaudio" ,"backlight", "battery","tray"],
+    "modules-right": ["custom/spotify","cpu","custom/cycle_wall","network","pulseaudio" ,"backlight", "battery","tray"],
     "modules-center": ["clock"],
     // Modules configuration
 
@@ -26,7 +26,7 @@
 
     "custom/spotify": {
         "exec": "/usr/bin/python3 .config/hypr/scripts//mediaplayer.py --player spotify",
-        "format": "{}  ",
+        "format": "{}  󰓇",
         "return-type": "json",
         "on-click": "playerctl next",
         "on-scroll-up": "playerctl previous",
@@ -57,7 +57,9 @@
     "cpu": {
         "interval":1,
         "format": "{icon0} {icon1} {icon2} {icon3}",
-        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+        "on-click": "kitty --class system_monitor -e htop"
+
     },
     "memory": {
         "format": "{percentage}% 󰇖",
@@ -85,16 +87,16 @@
     },
     "pulseaudio": {
         "format": "{volume}% {icon}",
-        "format-bluetooth": " {volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
         "format-bluetooth-muted": "婢  muted",
         "format-muted": "󰖁 muted",
         "format-icons": {
             "headphone": "󰋋",
             "hands-free": "",
-            "headset": "",
-            "phone": "",
+            "headset": "󰋋",
+            "phone": "󰄜",
             "portable": "",
-            "car": "",
+            "car": "󰸛",
             "default": ["󰕿", "󰖀", "󰕾"]
         },
         "on-click-right": "pavucontrol",
@@ -102,11 +104,11 @@
     },
     "network": {
          "interface": "wlan0",
-        "format-wifi":  "  󰤨  ",
-        "format-disconnected": "disconnected wifi",
+        "format-wifi":  " {signalStrength}% 󰤨 ",
+        "format-disconnected": " disconnected  ",
         "tooltip-format": "{ifname} via {gwaddr} ",
-        "tooltip-format-wifi": "{essid} ({signalStrength}%)",
-        "on-click": "~/.config/hypr/scripts/rofi-wifi-menu"
+        "tooltip-format-wifi": "{essid}",
+        //"on-click": "~/.config/hypr/scripts/rofi-wifi-menu"
     }
 }
 
