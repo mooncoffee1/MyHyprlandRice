@@ -12,6 +12,9 @@ horizontal_padding = 25
 text_icon_padding = 0
 frame_width = 2
 
+width = 350
+height = 100
+
 frame_color = "#83A598"
 separator_color = frame
 
@@ -40,7 +43,7 @@ browser = /usr/bin/firefox --new-tab
 
 word_wrap = yes
 shrink = yes
-geometry = "150x5-30-30"
+
 
 title = Dunst
 class = Dunst

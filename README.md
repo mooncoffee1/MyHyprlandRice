@@ -14,6 +14,7 @@
                                                   |\                 
                                                   |/                 
 
+# My hyprland rice with the gruvbox theme
 
 https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/bb4d0350-52c8-400c-b2bc-79531b54847e
 

@@ -1,0 +1,12 @@
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ * 
+ * Fonts
+ *
+ **/
+
+* {
+    font: "Iosevka 15px", "Material 15px", "material design icons extended 15px", "FiraCode Nerd Font 15px", "JetBrains Mono Nerd Font 15px";
+}

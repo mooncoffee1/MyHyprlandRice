@@ -65,6 +65,7 @@ window#waybar {
         background-position: 0% 50%;
     }
 }
+#custom-weather,
 #custom-audio_idle_inhibitor,
 #custom-spotify,
 #clock,
@@ -109,6 +110,37 @@ window#waybar {
  background: @yellow;
 }
 
+#custom-weather {
+    background: @aqua
+}
+#custom-weather.severe {
+    color: #eb937d;
+}
+
+#custom-weather.sunnyDay {
+    color: @black;
+}
+
+#custom-weather.clearNight {
+    color: @black;
+}
+
+#custom-weather.cloudyFoggyDay, #custom-weather.cloudyFoggyNight {
+    color: @black;
+}
+
+#custom-weather.rainyDay, #custom-weather.rainyNight {
+    color: @black;
+}
+
+#custom-weather.showyIcyDay, #custom-weather.snowyIcyNight {
+    color: @black;
+}
+
+#custom-weather.default {
+    color: @black;
+}
+
 
 #clock {
     background: linear-gradient(45deg, @lightblue, @green2);
@@ -141,14 +173,14 @@ window#waybar {
 
 @keyframes blink {
     to {
-        background-color: #689D6A;
-        color: #96804e;
+        background-color: @red;
+        color: @black;
     }
 }
 
 #battery.critical:not(.charging) {
-    background-color: #f38ba8;
-    color: #bf5673;
+    background-color: @yellow;
+    color: @black;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
