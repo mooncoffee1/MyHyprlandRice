@@ -9,9 +9,9 @@
     // "margin-right":25,
     "margin-bottom":-11,
     //"margin-top":5,
-    "modules-left": ["wlr/workspaces"],
+    "modules-left": ["wlr/workspaces","custom/audio_idle_inhibitor"],
     "modules-right": ["custom/spotify","cpu","custom/cycle_wall","network","pulseaudio" ,"backlight", "battery","tray"],
-    "modules-center": ["clock"],
+    "modules-center": [ "clock"],
     // Modules configuration
 
 
@@ -32,6 +32,21 @@
         "on-scroll-up": "playerctl previous",
         "on-click-right": "playerctl stop"
     },
+
+    "custom/audio_idle_inhibitor": {
+		"format": "{icon}",
+		"exec": "sway-audio-idle-inhibit --dry-print-both-waybar",
+		"exec-if": "which sway-audio-idle-inhibit",
+		"return-type": "json",
+        "tooltip": false,
+		"format-icons": {
+			"output": " 󰐌 ",
+			"input": " 󰍬 ",
+			"output-input": " 󰐌 󰍬 ",
+			"none": ""
+		}
+	},
+
     // End of custom modules //
     "wlr/workspaces": {
         "format": "{icon}",
@@ -105,8 +120,8 @@
     "network": {
          "interface": "wlan0",
         "format-wifi":  " {signalStrength}% 󰤨 ",
-        "format-disconnected": " disconnected  ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-disconnected": " Offline 󰤭 ",
+        "tooltip-format": "{ifname} via {gwaddr} 󰱶",
         "tooltip-format-wifi": "{essid}",
         //"on-click": "~/.config/hypr/scripts/rofi-wifi-menu"
     }

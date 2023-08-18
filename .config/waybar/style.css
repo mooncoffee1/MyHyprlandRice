@@ -65,7 +65,7 @@ window#waybar {
         background-position: 0% 50%;
     }
 }
-
+#custom-audio_idle_inhibitor,
 #custom-spotify,
 #clock,
 #battery,
@@ -104,6 +104,11 @@ window#waybar {
     padding: 5px;
     border-radius: 15px;
 }
+
+#custom-audio_idle_inhibitor {
+ background: @yellow;
+}
+
 
 #clock {
     background: linear-gradient(45deg, @lightblue, @green2);
@@ -181,17 +186,12 @@ window#waybar {
 }
 
 #network.disabled {
-    background-color: #45475a;
+    background-color: @aqua;
 }
 
 #network.disconnected {
-    background: rgb(243, 139, 168);
-    background: linear-gradient(
-        45deg,
-        rgba(243, 139, 168, 1) 0%,
-        rgba(250, 179, 135, 1) 100%
-    );
-    color: #fff;
+    background: @aqua;
+    color: @black;
     font-weight: bolder;
     padding-top: 3px;
     padding-right: 11px;
