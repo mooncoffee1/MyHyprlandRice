@@ -1,18 +1,17 @@
-
-                             ,                       _                      
-                            /|   |                  | |                  |  
-                             |___|         _   ,_   | |  __,   _  _    __|  
-                             |   |\|   | |/ \_/  |  |/  /  |  / |/ |  /  |  
-                             |   |/ \_/|/|__/    |_/|__/\_/|_/  |  |_/\_/|_/
-                                      /|/|                                  
-                                      \|\|                                  
-                                    ____           _      _          
-                                   (|   \         | | o  | |         
-                                    |    | __ _|_ | |    | |  _   ,  
-                                   _|    |/  \_|  |/  |  |/  |/  / \_
-                                  (/\___/ \__/ |_/|__/|_/|__/|__/ \/ 
-                                                  |\                 
-                                                  |/                 
+                              ,                       _                      
+                             /|   |                  | |                  |  
+                              |___|         _   ,_   | |  __,   _  _    __|  
+                              |   |\|   | |/ \_/  |  |/  /  |  / |/ |  /  |  
+                              |   |/ \_/|/|__/    |_/|__/\_/|_/  |  |_/\_/|_/
+                                       /|/|                                  
+                                       \|\|                                  
+                                     ____           _      _          
+                                    (|   \         | | o  | |         
+                                     |    | __ _|_ | |    | |  _   ,  
+                                    _|    |/  \_|  |/  |  |/  |/  / \_
+                                   (/\___/ \__/ |_/|__/|_/|__/|__/ \/ 
+                                                   |\                 
+                                                   |/                 
 
 # My hyprland rice with the gruvbox theme
 
@@ -22,8 +21,14 @@ https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/bb4d0350-52c8-4
 I assembled a rice with gruvbox theme
 
 # Images 
+![image](https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/af3873e3-4725-4aec-9f2d-27f797fdd3d7)
+![image](https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/dd816968-8677-49f2-86dd-85cb81aa7ecd)
+![image](https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/ddc1ec04-8279-42e9-9efc-f7c992bb43c0)
+![image](https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/e5588e17-9091-47b2-ab39-20176c065b07)
 
-![image](https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/419f6c7c-9a86-4a29-a500-e7415f77ac85) ![hyprRice](https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/e1ab6eb7-cfcc-4241-bdb3-71cf522de97b) ![image](https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/76fd9902-4969-4893-8fcb-7d33a8c18b3e)
+
+
+
 
  
 
