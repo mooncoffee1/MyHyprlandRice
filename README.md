@@ -20,7 +20,10 @@ A brief description of what this project does and who it's for
 
 # My hyprland rice with the gruvbox theme
 
-https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/bb4d0350-52c8-400c-b2bc-79531b54847e
+
+
+https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/3f854de7-d630-4855-b4f7-35863b4df147
+
 
 
 I assembled a rice with gruvbox theme
