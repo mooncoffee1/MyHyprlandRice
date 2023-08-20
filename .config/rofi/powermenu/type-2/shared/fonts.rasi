@@ -8,5 +8,5 @@
  **/
 
 * {
-    font: "CaskaydiaCove Nerd Font 15px";
+    font: "JetBrains Mono Nerd Font 10";
 }

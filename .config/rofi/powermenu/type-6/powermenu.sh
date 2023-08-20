@@ -11,7 +11,7 @@
 
 # Current Theme
 dir="$HOME/.config/rofi/powermenu/type-6"
-theme='style-1'
+theme='style-3'
 
 # CMDs
 lastlogin="`last $USER | head -n1 | tr -s ' ' | cut -d' ' -f5,6,7`"

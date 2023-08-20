@@ -6,14 +6,14 @@
  * Rofi Theme File
  * Rofi Version: 1.7.3
  **/
-
+@import "colors.rasi"
 /*****----- Configuration -----*****/
 configuration {
     show-icons:                 false;
 }
 
 /*****----- Global Properties -----*****/
-* {
+/* {
     font:                        "JetBrains Mono Nerd Font 10";
     background:                  #2D1B14;
     background-alt:              #462D23;
@@ -22,6 +22,7 @@ configuration {
     active:                      #716251;
     urgent:                      #934A1C;
 }
+*/
 
 /*
 USE_BUTTONS=YES
@@ -64,7 +65,7 @@ inputbar {
     spacing:                     0px;
     padding:                     100px 80px;
     background-color:            transparent;
-    background-image:            url("~/.config/rofi/images/d.png", width);
+    background-image:            url("~/.config/hypr/wallpapers/my-neighbor-totoro-sunflowers.png", width);
     children:                    [ "textbox-prompt-colon", "dummy","prompt"];
 }
 

@@ -15,16 +15,16 @@ theme='style-1'
 
 # CMDs
 uptime="`uptime -p | sed -e 's/up //g'`"
-host=`hostnamectl hostname --transien`
+host=`hostname`
 
 # Options
-shutdown=' 󰐥  Shutdown'
-reboot=' 󰑙  Reboot'
-lock=' 󰍁  Lock'
-suspend=' 󰭖  Suspend'
-logout=' 󰍂  Logout'
-yes=' 󰸞  Yes'
-no=' 󱎘  No'
+shutdown=' Shutdown'
+reboot=' Reboot'
+lock=' Lock'
+suspend=' Suspend'
+logout=' Logout'
+yes=' Yes'
+no=' No'
 
 # Rofi CMD
 rofi_cmd() {
@@ -70,8 +70,8 @@ run_cmd() {
 			amixer set Master mute
 			systemctl suspend
 		elif [[ $1 == '--logout' ]]; then
-			if [[ "$DESKTOP_SESSION" == 'hyprland' ]]; then
-				hyprctl dispatch exit
+			if [[ "$DESKTOP_SESSION" == 'openbox' ]]; then
+				openbox --exit
 			elif [[ "$DESKTOP_SESSION" == 'bspwm' ]]; then
 				bspc quit
 			elif [[ "$DESKTOP_SESSION" == 'i3' ]]; then
@@ -95,8 +95,8 @@ case ${chosen} in
 		run_cmd --reboot
         ;;
     $lock)
-		if [[ -x '/usr/bin/swaylock' ]]; then
-			swaylock -l
+		if [[ -x '/usr/bin/betterlockscreen' ]]; then
+			betterlockscreen -l
 		elif [[ -x '/usr/bin/i3lock' ]]; then
 			i3lock
 		fi

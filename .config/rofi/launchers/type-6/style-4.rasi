@@ -6,10 +6,11 @@
  * Rofi Theme File
  * Rofi Version: 1.7.3
  **/
+@import                          "colors.rasi"
 
 /*****----- Configuration -----*****/
 configuration {
-	modi:                       "drun,run,filebrowser,window";
+	modi:                       "drun";
     show-icons:                 true;
     display-drun:               "APPS";
     display-run:                "RUN";
@@ -20,7 +21,7 @@ configuration {
 }
 
 /*****----- Global Properties -----*****/
-* {
+/* {
     font:                        "JetBrains Mono Nerd Font 10";
     background:                  #2D1B14;
     background-alt:              #462D23;
@@ -29,7 +30,7 @@ configuration {
     active:                      #7B6C5B;
     urgent:                      #934A1C;
 }
-
+*/
 /*****----- Main Window -----*****/
 window {
     /* properties for window widget */
@@ -60,7 +61,7 @@ mainbox {
 imagebox {
     padding:                     20px;
     background-color:            transparent;
-    background-image:            url("~/.config/rofi/images/d.png", height);
+    background-image:            url("~/.config/hypr/wallpapers/my-neighbor-totoro-sunflowers.png", height);
     orientation:                 vertical;
     children:                    [ "inputbar", "dummy", "mode-switcher" ];
 }

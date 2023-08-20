@@ -8,5 +8,5 @@
  **/
 
 * {
-    font: "Iosevka 15px", "Material 15px", "material design icons extended 15px", "FiraCode Nerd Font 15px", "JetBrains Mono Nerd Font 15px";
+    font: "Iosevka Nerd Font 10";
 }

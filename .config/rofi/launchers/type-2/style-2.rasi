@@ -11,7 +11,7 @@
 configuration {
 	modi:                       "drun";
     show-icons:                 true;
-    display-drun:               "Apps: ";
+    display-drun:               "";
 	drun-display-format:        "{name}";
 }
 
@@ -25,10 +25,10 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
+    width:                       700px;
     x-offset:                    0px;
     y-offset:                    0px;
-    width:			 600px;
-    height:			 400px;
+
     enabled:                     true;
     margin:                      0px;
     padding:                     0px;

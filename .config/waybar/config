@@ -93,7 +93,9 @@
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
-        "format-icons": ["󰃚W", "󰃚", "󰃛", "󰃜", "󰃜", "󰃝", "󰃞", "󰃟", "󰃠"]
+        "on-scroll-down": "swayosd-client --brightness raise",
+        "on-scroll-up": "swayosd-client --brightness lower",
+        "format-icons": ["󰃚", "󰃚", "󰃛", "󰃜", "󰃜", "󰃝", "󰃞", "󰃟", "󰃠"]
     },
     "battery": {
         "states": {
@@ -106,7 +108,7 @@
          "format-good": "", // An empty format will hide the module
          "format-full": "󰁹",
         "format-icons": ["󰂎","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
-        "on-click": "sh .config/rofi/powermenu/type-1/powermenu.sh",
+        "on-click": ".config/rofi/powermenu/type-5/powermenu.sh",
     },
     "pulseaudio": {
         "format": "{volume}% {icon}",
@@ -123,7 +125,9 @@
             "default": ["󰕿", "󰖀", "󰕾"]
         },
         "on-click-right": "pavucontrol",
-      "on-click": ".config/hypr/scripts/changevolume mute",
+      "on-click": "swayosd-client --output-volume mute-toggle",
+      "on-scroll-down": "swayosd-client --output-volume raise",
+      "on-scroll-up": "swayosd-client --output-volume lower",
     },
     "network": {
          "interface": "wlan0",

@@ -6,10 +6,10 @@
  * Rofi Theme File
  * Rofi Version: 1.7.3
  **/
-
+@import                          "colors.rasi"
 /*****----- Configuration -----*****/
 configuration {
-	modi:                       "drun,filebrowser,window";
+	modi:                       "drun";
     show-icons:                 true;
     display-drun:               "";
     display-run:                "";
@@ -18,9 +18,8 @@ configuration {
 	drun-display-format:        "{name}";
 	window-format:              "{w} · {c} · {t}";
 }
-
 /*****----- Global Properties -----*****/
-* {
+/* {
     font:                        "JetBrains Mono Nerd Font 10";
     background:                  #231419;
     background-alt:              #2D1E23;
@@ -29,7 +28,7 @@ configuration {
     active:                      #2E3F34;
     urgent:                      #D08261;
 }
-
+*/
 /*****----- Main Window -----*****/
 window {
     /* properties for window widget */
