@@ -30,9 +30,9 @@ I assembled a rice with gruvbox theme
 
 # Images 
 ![image](https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/af3873e3-4725-4aec-9f2d-27f797fdd3d7)
-![image](https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/dd816968-8677-49f2-86dd-85cb81aa7ecd)
+![image](https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/6f15ba1c-4832-4c0d-88bc-b023a333e4a0)
+![image](https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/39e60c2f-e7f2-48b6-8349-96c0ebe9a4d6)
 ![image](https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/ddc1ec04-8279-42e9-9efc-f7c992bb43c0)
-![image](https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/e5588e17-9091-47b2-ab39-20176c065b07)
 
 
 
