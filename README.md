@@ -1,3 +1,8 @@
+
+# Project Title
+
+A brief description of what this project does and who it's for
+
                               ,                       _                      
                              /|   |                  | |                  |  
                               |___|         _   ,_   | |  __,   _  _    __|  
@@ -50,13 +55,20 @@ cd gruvbox-hyprland
 cp -r .config/ ~/.config
 cp -r .themes/ ~/
 ```
+
+please do this too  for the osd, to work:
+```bash 
+sudo systemctl enable --now swayosd-libinput-backend.service
+```
+
 thats all for now, i will add more things, i will correct more things, this git is wip
 
 ## Roadmap
 
-- Add all the files, correctly soo that anybody who uses them to not have errors
+-  ~~Add all the files, correctly soo that anybody who uses them to not have errors~~
+- ~~Use better and more customizable packs alternatives to work better/fit with the theme~~
 
-- Idk, its wip
+- Idk, its 80% wip
 
 
 ## Authors
