@@ -24,10 +24,12 @@ https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/3f854de7-d630-4
 some images!
 
 # Images 
-Gruvbox
+## Gruvbox
 ![image](https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/af3873e3-4725-4aec-9f2d-27f797fdd3d7)
-Catppuccin
-![image](https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/6f15ba1c-4832-4c0d-88bc-b023a333e4a0)
+##Catppuccin
+![photo_2023-08-30_20-12-15](https://github.com/mooncoffee1/MyHyprlandRice/assets/118976333/9f625aa4-3900-4c6e-8d03-8db412d2bd2b)
+
+
 Rosepine
 ![image](https://github.com/mooncoffee1/MyHyprlandRice/assets/118976333/53ef6ca8-d79c-4711-91dd-425cba61f28f)
 
