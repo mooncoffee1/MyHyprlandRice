@@ -60,9 +60,22 @@ cp -r .config/ ~/.config
 cp -r .themes/ ~/
 ```
 
-please do this too  for the osd, to work:
+please do this if u want charging notifications:
 ```bash 
-sudo systemctl enable --now swayosd-libinput-backend.service
+sudoedit  /etc/udev/rules.d/power.rules
+```
+
+then u need to copy this, please note that there is my username `ananas` change to your username (thats how udev works ig)
+```bash
+# Rule for when switching to battery
+ACTION=="change", SUBSYSTEM=="power_supply", ATTR{type}=="Mains", ATTR{online}=="0", ENV{DISPLAY}=":0", ENV{XAUTHORITY}="/home/ananas/.Xauthority" RUN+="/usr/bin/su ananas -c '/home/ananas/.config/hypr/scripts/chargingnotify 0'"
+# Rule for when switching to AC
+ACTION=="change", SUBSYSTEM=="power_supply", ATTR{type}=="Mains", ATTR{online}=="1", ENV{DISPLAY}=":0", ENV{XAUTHORITY}="/home/USERNAME/.Xauthority" RUN+="/usr/bin/su ananas -c 'home/ananas/.config/hypr/scripts/chargingnotify 1'"
+```
+
+then reload udev rules
+```bash 
+sudo udevadm control --reload
 ```
 
 thats all for now, i will add more things, i will correct more things, this git is wip
