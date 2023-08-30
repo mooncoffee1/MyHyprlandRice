@@ -53,8 +53,9 @@ First u will need hyprland and its dependences, i think these are all the packs.
 then ig u will need to clone my repo
 
 ```bash
-git clone https://github.com/mooncoffee1/gruvbox-hyprland.git
-cd gruvbox-hyprland
+git clone https://github.com/mooncoffee1/MyHyprlandRice.git
+cd MyHyprlandRice
+#cd to a color scheme then >
 cp -r .config/ ~/.config
 cp -r .themes/ ~/
 ```
