@@ -1,0 +1,295 @@
+/*
+ * vim: ft=less
+ */
+
+
+ @define-color base   #191724;
+ @define-color surface #1f1d2e;
+ 
+ 
+ @define-color text     #e0def4;
+ @define-color subtle    #908caa;
+ @define-color muted     #6e6a86;
+ 
+ 
+ @define-color overlay #26233a;
+ 
+ 
+ @define-color love      #eb6f92;
+ @define-color gold      #f6c177;
+ @define-color rose      #ebbcba;
+ @define-color pine      #31748f;
+ @define-color foam      #9ccfd8;
+ @define-color iris      #c4a7e7;
+ 
+ @define-color highlow   #21202e;
+ @define-color highmed   #403d52;
+ @define-color highhigh  #524f67;
+ 
+
+.notification-row {
+  outline: none;
+}
+
+.notification-row:focus,
+.notification-row:hover {
+  background: @base;
+}
+
+.notification {
+  border-radius: 12px;
+  margin: 14px 12px;
+  border: 2px solid @rose;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.7),
+    0 2px 6px 2px rgba(0, 0, 0, 0.3);
+  padding: 0;
+}
+
+/* 
+.low {
+  background: #21202e;
+  border-radius: 2px;
+}
+
+
+
+.normal {
+  background: #403d52;
+  border-radius: 2px;
+}
+
+.critical {
+  background: #524f67;
+  border-radius: 2px;
+}
+ */
+
+.notification-content {
+  background: transparent;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.close-button {
+  background: @rose;
+  color: @base;
+  text-shadow: none;
+  padding: 0;
+  border-radius: 100%;
+  margin-top: 20px;
+  margin-right: 16px;
+  box-shadow: none;
+  border: none;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.close-button:hover {
+  box-shadow: none;
+  background: @love;
+  transition: all 0.15s ease-in-out;
+  border: none;
+}
+
+.notification-default-action,
+.notification-action {
+  padding: 2px;
+  margin: 0;
+  box-shadow: none;
+  background: @base;
+  color: @text;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+  -gtk-icon-effect: none;
+  background: @overlay;
+}
+
+.notification-default-action {
+  border-radius: 12px;
+}
+
+/* When alternative actions are visible */
+.notification-default-action:not(:only-child) {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.notification-action {
+  border-radius: 0px;
+  border-top: none;
+  border-right: none;
+}
+
+/* add bottom border radius to eliminate clipping */
+.notification-action:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.notification-action:last-child {
+  border-bottom-right-radius: 10px;
+  border-right: 1px solid @rose
+}
+
+.image {
+}
+
+.body-image {
+  margin-top: 6px;
+  background-color: @text;
+  border-radius: 12px;
+}
+
+.summary {
+  font-size: 13px;
+  font-weight: bold;
+  background: transparent;
+  color: @text;
+  text-shadow: none;
+}
+
+.time {
+  font-size: 12px;
+  font-weight: bold;
+  background: transparent;
+  color: @text;
+  text-shadow: none;
+  margin-right: 18px;
+}
+
+.body {
+  font-size: 12px;
+  font-weight: normal;
+  background: transparent;
+  color: @text;
+  text-shadow: none;
+}
+
+/* The "Notifications" and "Do Not Disturb" text widget */
+.top-action-title {
+  color: @text;
+  text-shadow: none;
+}
+
+.control-center {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #313244;
+
+  border-radius: 20px;
+  margin: 10px 10px;
+  background: @base;
+  padding: 14px;
+}
+
+.control-center .notification-row .notification-background .notification {
+  border-radius: 7px;
+  color: @text;
+  background-color: transparent;
+}
+
+.control-center .notification-row .notification-background .notification:hover {
+  box-shadow: inset 0 0 0 1px #45475a;
+  background-color: red;
+  color: #cdd6f4;
+}
+.control-center .notification-normal .notification-background:active {
+  box-shadow: inset 0 0 0 1px #45475a;
+  background-color: #74c7ec;
+  color: #cdd6f4;
+}
+
+
+.control-center-list  {
+  background: transparent;
+  
+}
+
+.floating-notifications {
+  background: transparent;
+}
+
+/* Window behind control center and on all other monitors */
+
+/*** Widgets ***/
+
+/* Title widget */
+.widget-title {
+  margin: 8px;
+  font-size: 1.5rem;
+}
+.widget-title > button {
+  font-size: initial;
+  color: @text;
+  text-shadow: none;
+  background: @base;
+  border: 2px solid @rose;
+  box-shadow: none;
+  border-radius: 12px;
+}
+.widget-title > button:hover {
+  background: @overlay;
+}
+
+/* DND widget */
+.widget-dnd {
+  margin: 8px;
+  font-size: 1.1rem;
+}
+.widget-dnd > switch {
+  font-size: initial;
+  border-radius: 12px;
+  background: @base;
+  border: 2px solid @rose;
+  box-shadow: none;
+}
+.widget-dnd > switch:checked {
+  background: @base;
+
+}
+.widget-dnd > switch slider {
+  background: @rose;
+  border-radius: 12px;
+}
+
+/* Label widget */
+.widget-label {
+  margin: 18px;
+}
+.widget-label > label {
+  font-size: 1.1rem;
+}
+
+/* Mpris widget */
+.widget-mpris {
+  /* The parent to all players */
+}
+.widget-mpris-player {
+  padding: 8px;
+  margin: 8px;
+}
+.widget-mpris-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.widget-mpris-subtitle {
+  font-size: 1.1rem;
+}
+
+progressbar {
+  box-shadow: inset 0 0 0 1px #45475a;
+}
+.notification.low progress,
+.notification.normal progress {
+  background-color: @pine;
+}
+
+trough {
+  background-color: @overlay;
+}
+
+
+progressbar,
+progress,
+trough {
+  border-radius: 12.6px;
+}

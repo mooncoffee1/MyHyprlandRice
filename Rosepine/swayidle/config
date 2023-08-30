@@ -1,0 +1,7 @@
+timeout 120 'chayang -d 15 && hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'
+timeout 135 'swaylock -f'
+timeout 240 'systemctl suspend'
+before-sleep 'swaylock -f'
+
+
+
