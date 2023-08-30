@@ -118,8 +118,8 @@
             "critical": 20
         },
         "format": "{capacity} {icon}",
-        "format-charging": "{capacity}% 󰂅",
-        "format-plugged": "{capacity}% {icon}",
+        "format-charging": "{capacity} 󰂅",
+        "format-plugged": "{capacity} {icon}",
          "format-good": "", // An empty format will hide the module
          "format-full": "󰁹",
         "format-icons": ["󰂎","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
@@ -156,13 +156,13 @@
         "tooltip": false,
         "format": "{} {icon}",
         "format-icons": {
-          "notification": "<span foreground='#CC6181'><sup></sup></span>",
-          "none": "",
-          "dnd-notification": "<span foreground='red'><sup></sup></span>",
-          "dnd-none": "",
-          "inhibited-notification": "<span foreground='red'><sup></sup></span>",
-          "inhibited-none": "",
-          "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+          "notification": "󱅫",
+          "none": "󰂚",
+          "dnd-notification": "󰂛",
+          "dnd-none": "󰂛",
+          "inhibited-notification": "󰂞",
+          "inhibited-none": "󰂛",
+          "dnd-inhibited-notification": "󰂞",
           "dnd-inhibited-none": ""
         },
         "return-type": "json",
