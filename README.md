@@ -16,11 +16,6 @@
 # My hyprland rice with various color schemes
 
 
-
-https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/3f854de7-d630-4855-b4f7-35863b4df147
-
-
-
 some images!
 
 # Images 
