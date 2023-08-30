@@ -83,7 +83,7 @@ thats all for now, i will add more things, i will correct more things, this git 
 ## Roadmap
 
 -  ~~Add all the files, correctly soo that anybody who uses them to not have errors~~
-- ~~Use better and more customizable packs alternatives to work better/fit with the theme~~
+- Use better and more customizable packs alternatives to work better/fit with the theme (the rosepine theme has more features and better packages)
 
 - Idk, its 80% wip
 
