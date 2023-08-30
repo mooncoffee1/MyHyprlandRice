@@ -42,7 +42,7 @@ I assembled a rice with gruvbox theme
 First u will need hyprland and its dependences, i think these are all the packs.
 
 ```bash
-  yay -S hyprland-git waybar-hyprland-git eww-wayland network-manager-applet blueman python rustup kitty fish rofi-emoji rofi-lbonn-wayland-git xdg-desktop-portal-hyprland swayidle swaylock-effects grim slurp mako wl-clipboard cliphist swww sddm-git nwg-look otf-font-awesome swappy swayosd-git hyprpa rofi-emoji ttf-material-design-icons-extended ttf-iosevka 
+  yay -S hyprland-git waybar-hyprland-git network-manager-applet blueman python rustup kitty fish wofi-emoji  xdg-desktop-portal-hyprland swayidle swaylock-effects grim slurp mako wl-clipboard chayang cliphist swww nwg-look o swappy wofi wofi-calc wofi-emoji ttf-material-design-icons-extended ttf-iosevka xdg-user-dirs noto-fonts-emoji polkit-kde-agent clipman imagemagick hyprpicker gpick acpi qt5ct sweet-cursors-theme-git lighdm lightdm-elephant-greeter-git spotify waybar-mpris-git brightnessctl pamixer papirus-icon-theme ttf-jetbrains-mono-nerd pipewire pipewire-jack pipewire-alsa pipewire-pulse
 ```
 
 then ig u will need to clone my repo
