@@ -1,0 +1,166 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+   // "height": 50, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 2, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "margin-left":-10,
+    "margin-right":-10,
+    "margin-bottom":-10,
+    "margin-top":-2,
+    "modules-left": ["wlr/workspaces","custom/spotify"],
+    "modules-right": ["custom/audio_idle_inhibitor", "custom/updates", "cpu", "temperature", "network","pulseaudio" ,"backlight", "battery", "tray", "clock"],
+    "modules-center": [ ],
+    // Modules configuration
+
+
+    // custom modules //
+    "custom/cycle_wall":{
+        "format":"  󰊠  ",
+        // "interval": 1,
+        "on-click": "~/.config/hypr/scripts/wall",
+        "tooltip": false
+
+    },
+    "custom/audio_idle_inhibitor": {
+		"format": "{icon}",
+		"exec": "sway-audio-idle-inhibit --dry-print-both-waybar",
+		"exec-if": "which sway-audio-idle-inhibit",
+		"return-type": "json",
+		"format-icons": {
+			"output": "󰝚",
+			"input": "󰍬",
+			"output-input": "󰝚  ",
+			"none": ""
+		}
+	},
+
+    "custom/spotify": {
+        "exec": "/usr/bin/python3 .config/hypr/scripts//mediaplayer.py --player spotify",
+        "format": "{}  󰓇",
+        "return-type": "json",
+        "on-click": "playerctl next",
+        "on-scroll-up": "playerctl previous",
+        "on-click-right": "playerctl stop"
+    },
+
+    "custom/weather": {
+        "exec": "python ~/.config/hypr/scripts/weather.py",
+        "restart-interval": 300,
+        "return-type": "json",
+        "on-click": "xdg-open https://weather.com/en-IN/weather/today/l/$(location_id)"
+        // "format-alt": "{alt}",
+    },
+
+    // End of custom modules //
+    "wlr/workspaces": {
+        "format": "{icon}",
+        "format-active": " {icon} ",
+        "on-click": "activate",
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 8,
+        "show-passive-items": false
+    },
+    "clock": {
+        // "timezone": "America/New_York",
+        "tooltip": false,
+        "interval": 60,
+        "format": "{:%H:%M}",
+        "max-length": 25,
+        "on-click": "kitty  --class calendar -e calcure"
+    },
+    "cpu": {
+        "interval":1,
+        "format": "{icon0} {icon1} {icon2} {icon3}",
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+        "on-click": "kitty --class system_monitor -e htop"
+
+    },
+    "memory": {
+        "format": "{percentage}% 󰇖",
+        "interval": 1,
+        "on-click": "kitty --class system_monitor -e htop",
+        "max-lenght": 35
+    },
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% {icon}",
+        "on-scroll-down": "~/.config/hypr/scripts/brightness --inc",
+        "on-scroll-up": "~/.config/hypr/scripts/brightness --dec",
+        "format-icons": ["󰃚", "󰃚", "󰃛", "󰃜", "󰃜", "󰃝", "󰃞", "󰃟", "󰃠"]
+    },
+    "battery": {
+        "states": {
+            "warning": 50,
+            "critical": 20
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% 󰂅",
+        "format-plugged": "{capacity}% {icon}",
+         "format-good": "", // An empty format will hide the module
+         "format-full": "󰁹",
+        "format-icons": ["󰂎","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "on-click": "~/.config/hypr/scripts/wofi-power.sh",
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-bluetooth-muted": "婢  muted",
+        "format-muted": "󰖁 muted",
+        "format-icons": {
+            "headphone": "󰋋",
+            "hands-free": "",
+            "headset": "󰋋",
+            "phone": "󰄜",
+            "portable": "",
+            "car": "󰸛",
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "on-click-right": "pavucontrol",
+      "on-click": "~/.config/sway/scripts/volume --toggle",
+      "on-scroll-down": "~/.config/sway/scripts/volume --inc",
+      "on-scroll-up": "~/.config/sway/scripts/volume --dec",
+    },
+    "network": {
+         "interface": "wlan0",
+        "format-wifi":  " {signalStrength}% 󰤨 ",
+        "format-disconnected": " Offline 󰤭 ",
+        "tooltip-format": "{ifname} via {gwaddr} 󰱶",
+        "tooltip-format-wifi": "{essid}",
+        //"on-click": "~/.config/hypr/scripts/rofi-wifi-menu"
+    },
+    "custom/notification": {
+        "tooltip": false,
+        "format": "{} {icon}",
+        "format-icons": {
+          "notification": "<span foreground='red'><sup></sup></span>",
+          "none": "",
+          "dnd-notification": "<span foreground='red'><sup></sup></span>",
+          "dnd-none": "",
+          "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+          "inhibited-none": "",
+          "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+          "dnd-inhibited-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+      }
+},
+
+"custom/updates": {
+    "format": "{} {icon}",
+    "return-type": "json",
+    "format-icons": {
+        "has-updates": "󱍷",
+        "updated": "󰂪"
+    },
+    "exec-if": "which waybar-module-pacman-updates",
+    "exec": "waybar-module-pacman-updates"
+}

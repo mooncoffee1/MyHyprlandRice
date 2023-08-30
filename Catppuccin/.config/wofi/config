@@ -1,0 +1,12 @@
+show=drun,
+width=750
+height=400
+always_parse_args=true
+show_all=false
+print_command=true
+insensitive=true
+gtk_dark=true
+image_size=16
+prompt= Hmm, what do you want to run?
+halign=fill
+location=center
