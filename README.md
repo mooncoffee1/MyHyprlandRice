@@ -13,7 +13,7 @@
                                                    |\                 
                                                    |/                 
 
-# My hyprland rice with the gruvbox theme
+# My hyprland rice with various color schemes
 
 
 
@@ -21,13 +21,16 @@ https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/3f854de7-d630-4
 
 
 
-I assembled a rice with gruvbox theme
+some images!
 
 # Images 
+Gruvbox
 ![image](https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/af3873e3-4725-4aec-9f2d-27f797fdd3d7)
+Catppuccin
 ![image](https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/6f15ba1c-4832-4c0d-88bc-b023a333e4a0)
-![image](https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/39e60c2f-e7f2-48b6-8349-96c0ebe9a4d6)
-![image](https://github.com/mooncoffee1/gruvbox-hyprland/assets/118976333/ddc1ec04-8279-42e9-9efc-f7c992bb43c0)
+Rosepine
+![image](https://github.com/mooncoffee1/MyHyprlandRice/assets/118976333/53ef6ca8-d79c-4711-91dd-425cba61f28f)
+
 
 
 
