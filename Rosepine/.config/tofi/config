@@ -9,7 +9,7 @@ num-results = 4
 font = Iosevka
 font-size = 16
 
-background-color = #191724CC
+background-color = #191724e6
 prompt-text = " 󰍉 "
 text-color = #DAD8EE
-selection-color = #EF8B89
+selection-color = #EB90A3
