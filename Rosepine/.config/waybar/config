@@ -9,12 +9,21 @@
     "margin-right":-10,
     "margin-bottom":-10,
    // "margin-top":-2,
-    "modules-left": ["wlr/workspaces"],
+    "modules-left": ["hyprland/workspaces"],
     "modules-right": ["custom/audio_idle_inhibitor", "tray", "temperature", "cpu", "pulseaudio" ,"backlight",  "battery", "custom/cycle_wall", "custom/notification", "clock"],
     "modules-center": ["custom/waybar-mpris"],
     // Modules configuration
 
 
+    "hyprland/workspaces": {
+        "format": "{name}"
+    },
+
+    "hyprland/window": {
+        "max-length": 200,
+        "separate-outputs": true
+    },
+    
     // custom modules //
     "custom/cycle_wall":{
         "format":"  󰊠  ",
@@ -71,14 +80,6 @@
         // "format-alt": "{alt}",
     },
 
-    // End of custom modules //
-    "wlr/workspaces": {
-        "format": "{icon}",
-        "format-active": " {icon} ",
-        "on-click": "activate",
-    },
-
-
     "tray": {
         "icon-size": 14,
         "spacing": 8,
@@ -96,7 +97,7 @@
         "interval":1,
         "format": "{icon0} {icon1} {icon2} {icon3}",
         "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
-        "on-click": "sleep 0.1; foot --class system_monitor -e htop"
+        "on-click": "sleep 0.1; foot  htop"
 
     },
     "memory": {
@@ -128,8 +129,8 @@
     "pulseaudio": {
         "format": "{volume} {icon}",
         "format-bluetooth": "{volume} {icon}",
-        "format-bluetooth-muted": "婢  muted",
-        "format-muted": "󰖁 muted",
+        "format-bluetooth-muted": "婢  mute",
+        "format-muted": "off 󰝟",
         "format-icons": {
             "headphone": "󰋋",
             "hands-free": "",

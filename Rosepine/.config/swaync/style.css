@@ -28,7 +28,7 @@
  
 
  * {
-  font-size: 13px;
+  font-size: 12.5px;
   font-family: "Iosevka";
   transition: 200ms;
 }
@@ -44,9 +44,10 @@
 
 .notification {
   border-radius: 12px;
-  margin-top: 14px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   border: 2px solid @rose;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.7),
+  box-shadow: 0 0 5 1px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.7),
     0 2px 6px 2px rgba(0, 0, 0, 0.3);
   padding: 0;
 }
@@ -72,7 +73,7 @@
 
 .notification-content {
   background: transparent;
-  padding: 15px;
+  padding: 16px;
   border-radius: 12px;
 }
 
@@ -99,8 +100,9 @@
 
 .notification-default-action,
 .notification-action {
-  padding: 2px;
-  margin: 0;
+  transition: all 200ms ease;
+  padding: 1px;
+  margin: 0px;
   box-shadow: none;
   background: @base;
   color: @text;
@@ -143,7 +145,7 @@
 }
 
 .body-image {
-  margin-top: 6px;
+  margin-top: 4px;
   background-color: @text;
   border-radius: 12px;
 }
@@ -166,7 +168,7 @@
 }
 
 .body {
-  font-size: 12.5px;
+  font-size: 13px;
   font-weight: normal;
   background: transparent;
   color: @pine;
