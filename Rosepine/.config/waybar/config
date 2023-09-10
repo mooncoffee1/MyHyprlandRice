@@ -10,7 +10,7 @@
     "margin-bottom":-10,
    // "margin-top":-2,
     "modules-left": ["hyprland/workspaces"],
-    "modules-right": ["custom/audio_idle_inhibitor", "tray", "temperature", "cpu", "pulseaudio" ,"backlight",  "battery", "custom/cycle_wall", "custom/notification", "clock"],
+    "modules-right": ["custom/audio_idle_inhibitor", "tray",  "pulseaudio" , "battery", "custom/notification", "clock"],
     "modules-center": ["custom/waybar-mpris"],
     // Modules configuration
 

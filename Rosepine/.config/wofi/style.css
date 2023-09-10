@@ -1,57 +1,100 @@
+/*
+*
+* Rosepine palette
+*
+*/
+
+@define-color base   #191724;
+@define-color surface #1f1d2e;
+
+
+@define-color text     #e0def4;
+@define-color subtle    #908caa;
+@define-color muted     #6e6a86;
+
+
+@define-color overlay #26233a;
+
+
+@define-color love      #eb6f92;
+@define-color gold      #f6c177;
+@define-color rose      #ebbcba;
+@define-color pine      #31748f;
+@define-color foam      #9ccfd8;
+@define-color iris      #c4a7e7;
+
+@define-color highlow   #21202e;
+@define-color highmed   #403d52;
+@define-color highhigh  #524f67;
+
+
 window {
-    margin: 0px;
-    background-color: #191724;
-    border-radius: 12.6px;
-    border: 2px solid #eb6f92;
-    color: #e0def4;
-    font-family: 'Iosevka';
-    font-size: 14px;
+    margin: 5px;
+    border: 5px solid @base; /* Border color */
+    background-color: @rose; /* Background color */
+    border-radius: 15px;
 }
 
 #input {
-    margin: 5px;
-    border-radius: 12.6px;
+    padding: 4px;
+    margin: 4px;
+    padding-left: 20px;
     border: none;
-    color: #eb6f92;
-    background-color: #26233a;
-    
+    color: @base; /* Text color */
+    font-weight: bold;
+    background-color: @overlay; /* Background color */
+    background: linear-gradient(90deg, @love 0%, @rose 100%); /* Background gradient */
+    outline: none;
+    border-radius: 15px;
+    margin: 10px;
+    margin-bottom: 2px;
+}
+
+#input:focus {
+    border: 0px solid @pine; /* Border color on focus */
+    margin-bottom: 0px;
 }
 
 #inner-box {
-    margin: 5px;
-    border: none;
-    background-color: #26233a;
-    color: #191724;
-    border-radius: 12.6px;
+    margin: 4px;
+    border: 10px solid @overlay; /* Border color */
+    color: @pine; /* Text color */
+    font-weight: bold;
+    background-color: @overlay; /* Background color */
+    border-radius: 15px;
 }
 
 #outer-box {
-    margin: 15px;
+    margin: 0px;
     border: none;
-    background-color: #191724;
+    border-radius: 15px;
+    background-color: @overlay; /* Background color */
 }
 
 #scroll {
-    margin: 0px;
+    margin-top: 5px;
     border: none;
+    border-radius: 15px;
+    margin-bottom: 5px;
 }
 
-#text {
-    margin: 5px;
+#text:selected {
+    color: @overlay; /* Text color */
+    margin: 0px 0px;
     border: none;
-    color: #e0def4;
-} 
+    border-radius: 15px;
+}
+
+#entry {
+    margin: 0px 0px;
+    border: none;
+    border-radius: 15px;
+    background-color: transparent;
+}
 
 #entry:selected {
-    background-color: #eb6f92;
-    color: #191724;
-    border-radius: 12.6px;
-    outline: none;
-}
-
-#entry:selected * {
-    background-color: #eb6f92;
-    color: #191724;
-    border-radius: 12.6px;
-    outline: none;
+    margin: 0px 0px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(45deg, @love 30%, @rose 100%); /* Background gradient */
 }

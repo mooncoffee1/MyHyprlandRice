@@ -8,6 +8,8 @@ window {
 button {
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 50px;
+
     background-size: 25%;
     border: none;
     background-color: rgba(36, 0, 18, 0);
@@ -21,6 +23,7 @@ button:hover {
 
 button:focus {
     background-color: #ff91a4;
+    border-radius: 50px;
     color: #240012;
 }
 

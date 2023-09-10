@@ -265,10 +265,11 @@
 
 /* Label widget */
 .widget-label {
-  margin: 18px;
+  margin: 8px;
+  margin-bottom: 14px;
 }
 .widget-label > label {
-  font-size: 1.1rem;
+  font-size: 13px;
 }
 
 /* Mpris widget */
@@ -276,15 +277,20 @@
   /* The parent to all players */
 }
 .widget-mpris-player {
-  padding: 8px;
-  margin: 8px;
+  padding: 16px;
+  margin: 2px;
+  background-color: @surface;
+  border-radius: 12px;
 }
 .widget-mpris-title {
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 16px;
+  color: @rose;
 }
 .widget-mpris-subtitle {
-  font-size: 1.1rem;
+  font-size: 13px;
+  color: @pine;
+
 }
 
 progressbar {
@@ -306,26 +312,97 @@ trough {
   border-radius: 12.6px;
 }
 
-/* Mpris widget */
-.widget-mpris {
-  /* The parent to all players */
-  color: @foreground;
+/* Volume and Brightness Widget*/
+
+.widget-volume {
+  background-color: @surface;
+  color: @rose;
+  padding: 4px 8px 8px 8px;
+  margin: 0px 8px 8px 8px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
-.widget-mpris-player {
+
+
+.widget-backlight {
+  background-color: @surface;
+  color: @rose;
+  padding: 8px 8px 4px 8px;
+  margin: 0px 8px 8px 8px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.power-buttons{
+  background-color: transparent;
   padding: 8px;
   margin: 8px;
-  color: @foreground;
-  padding-bottom: 0;
-  margin-bottom: 0;
+  border-radius: 12px;
 }
-.widget-mpris-title {
-  font-weight: bold;
-  font-size: 1.25rem;
-  color: @foreground;
-  letter-spacing: 2px;
-  font: bold 1em Megrim;
+
+.power-buttons>button {
+  background: transparent;
+  border: none;
 }
-.widget-mpris-subtitle {
-  font-size: 1em;
-  color: @foreground;
+
+.power-buttons>button:hover {
+  background: @surface;
+
+}
+
+
+.widget-menubar>box>.menu-button-bar>button{
+  border: none;
+  background: @overlay;
+  margin: 4px;
+  border-radius: 12px;
+
+}
+
+.topbar-buttons>button{
+  border: none;
+  background: transparent;
+  margin: 4px;
+  border-radius: 12px;
+
+
+}
+
+.amogus>button{
+  border: none;
+  background: @overlay;
+  border-radius: 12px;
+  margin: 4px;
+}
+
+.widget-buttons-grid{
+  padding: 8px;
+  margin: 80px;
+  border-radius: 12px;
+  background-color: @overlay;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button{
+  background: @overlay;
+  border-radius: 12px;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+  background: @muted;
+}
+
+.powermode-buttons{
+  background-color: @overlay;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 12px;
+}
+
+.powermode-buttons>button {
+  background: transparent;
+  border: none;
+}
+
+.powermode-buttons>button:hover {
+  background: @noti-bg-hover;
 }

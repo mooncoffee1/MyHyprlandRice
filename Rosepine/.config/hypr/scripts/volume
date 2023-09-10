@@ -59,13 +59,13 @@ notify_user() {
 # Increase Volume
 inc_volume() {
  # pactl set-sink-volume @DEFAULT_SINK@ +5% && notify_user && $play
- pamixer -i 5 && notify_user && $play    # an alternative to pactl, doesn't go beyond 100% tho
+ pamixer -i 5 && notify_user    # an alternative to pactl, doesn't go beyond 100% tho
 }
 
 # Decrease Volume
 dec_volume() {
 #  pactl set-sink-volume @DEFAULT_SINK@ -5% && notify_user && $play
-   pamixer -d 5 && notify_user && $play  # an alternative to pactl, doesn't go beyond 100% tho
+   pamixer -d 5 && notify_user # an alternative to pactl, doesn't go beyond 100% tho
 }
 
 # Toggle AUDIO Mute
@@ -73,7 +73,7 @@ toggle_mute() {
   if [ "$(pamixer --get-mute)" == "false" ]; then
     pamixer -m && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$iDIR/volume-mute.png" "Volume Switched OFF"
   elif [ "$(pamixer --get-mute)" == "true" ]; then
-    pamixer -u && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$(get_icon)" "Volume Switched ON" && $play
+    pamixer -u && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$(get_icon)" "Volume Switched ON" 
   fi
 }
 
@@ -82,7 +82,7 @@ toggle_mic() {
   if pactl list sources | grep -q "Mute: yes"; then
     # If microphone is muted, unmute it and send a notification
     pactl set-source-mute @DEFAULT_SOURCE@ toggle
-    notify-send -h string:x-canonical-private-synchronous:sys-notify-mic -u low -i "$iDIR/microphone.png" "Microphone Switched ON" && $play
+    notify-send -h string:x-canonical-private-synchronous:sys-notify-mic -u low -i "$iDIR/microphone.png" "Microphone Switched ON" 
   else
     # If microphone is not muted, mute it and send a notification
     pactl set-source-mute @DEFAULT_SOURCE@ toggle

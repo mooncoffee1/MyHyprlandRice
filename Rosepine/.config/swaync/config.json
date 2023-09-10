@@ -43,32 +43,94 @@
   },
   
   "widgets": [
-    "inhibitors",
-    "title",
+    "menubar#label",
     "dnd",
-    "notifications"
-  ],
-  "widget-config": {
-    "inhibitors": {
-      "text": "Inhibitors",
-      "button-text": "Clear All",
-      "clear-all-button": true
-    },
-    "title": {
-      "text": "Notifications 󰂚",
-      "clear-all-button": true,
-      "button-text": "󰎟"
-    },
-    "dnd": {
-      "text": "Do Not Disturb"
-    },
-    "label": {
-      "max-lines": 5,
-      "text": "I Love Hyprland"
-    },
-    "mpris": {
-      "image-size": 96,
-      "image-radius": 12
-    }
-  }
-}
+    "inhibitors",
+    "label",
+    "backlight",
+    "volume",
+    "title",
+    "notifications",
+    "mpris"
+   ],
+   "widget-config": {
+     "menubar#label": {
+       "menu#power-buttons": {
+         "label": "⏻", 
+         "position": "right",
+         "actions": [ 
+           {
+             "label": " 󰌾 Lock ",
+             "command": "swaync-client -t -sw && swaylock -f"
+           },
+           {
+             "label": " 󰍃 Log Out",
+             "command": "swaync-client -t -sw && hyprctl dispatch exit 0"
+           },
+           {
+             "label": " 󰤄 Suspend ",
+             "command": "swaync-client -t -sw && systemctl suspend"
+           },
+           {
+             "label": " 󰜉 Reboot",
+             "command": "swaync-client -t -sw && reboot"
+           },
+           {
+             "label": " 󰐥 Shut down ",
+             "command": "swaync-client -t -sw && shutdown"
+           }
+         ]
+     },
+     "buttons-grid#amogus": {
+       "actions": [
+         {
+           "label": " 󰏘 ",
+           "command": "swaync-client -t -sw && nwg-look"
+         },
+         {
+           "label": " 󰂯 ",
+           "command": "swaync-client -t -sw && blueman-manager"
+         }
+       ]
+     },
+     "buttons#topbar-buttons": {
+         "position": "left",
+         "actions": [
+           {
+             "label": " 󰆞 ",
+             "command": "swaync-client -t -sw && sh .config/hypr/scripts/screenshot"
+           }
+         ]
+       }
+     },
+     "inhibitors": {
+       "text": "inhibitors",
+       "button-text": "Clear All",
+       "clear-all-button": true
+     },
+     "title": {
+       "text": "Notifcations",
+       "clear-all-button": true,
+       "button-text": "󰎟"
+     },
+     "label": {
+     "max-lines": 5,
+     "text": "Control Center"
+     },
+     "dnd": {
+       "text": "Do Not Disturb"
+     },
+     "mpris": {
+       "image-size": 64,
+       "image-radius": 10
+     },
+     "backlight": {
+       "label": " 󰃠 ",
+       "device": "amdgpu_bl1"
+     },
+     "volume": {
+       "label": " 󰕾 "
+     }
+   }
+ }
+ 

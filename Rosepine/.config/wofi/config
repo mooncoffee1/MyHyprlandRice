@@ -1,8 +1,8 @@
 width=400
 height=250
 location=center
-show=
-prompt=
+show=drun
+prompt=What is in your mind ?
 filter_rate=100
 allow_markup=true
 no_actions=true
@@ -13,3 +13,4 @@ insensitive=true
 allow_images=false
 image_size=40
 gtk_dark=true
+hide_scroll	= true

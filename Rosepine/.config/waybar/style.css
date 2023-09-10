@@ -21,14 +21,14 @@ window#waybar {
 
 #workspaces button {
     box-shadow: rgba(0, 0, 0, 0.216) 2 2 5 2px;
-    background-color: @text;
+    background-color: @base;
     border-radius: 15px;
     margin-right: 10px;
     padding-top: 4px;
     padding-bottom: 2px;
     padding-right: 10px;
     font-weight: bolder;
-    color: @base;
+    color: @pine;
 }
 #workspaces button:hover {
     background-color: @highmed;
@@ -128,7 +128,7 @@ window#waybar {
 
 
 #custom-audio_idle_inhibitor {
- color: @foam;
+ color: @pine;
  background: @base;
  box-shadow: rgba(0, 0, 0, 0.200) 2 2 5 2px;
 
@@ -240,7 +240,7 @@ window#waybar {
 
 #pulseaudio {
     background-color: @base;
-    color: @foam;
+    color: @iris;
     font-weight: bolder;
 }
 
@@ -290,12 +290,14 @@ window#waybar {
 }
 
 #idle_inhibitor {
-   color: #2d3436;
+   color: red;
+   background-color: red;
+
 }
 
 #idle_inhibitor.activated {
     background-color: #ecf0f1;
-    color: #2d3436;
+    color: red;
 }
 
 #mpd {
