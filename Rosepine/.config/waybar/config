@@ -129,7 +129,7 @@
     "pulseaudio": {
         "format": "{volume} {icon}",
         "format-bluetooth": "{volume} {icon}",
-        "format-bluetooth-muted": "婢  mute",
+        "format-bluetooth-muted": "off 󰋋",
         "format-muted": "off 󰝟",
         "format-icons": {
             "headphone": "󰋋",
