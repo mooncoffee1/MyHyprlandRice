@@ -10,7 +10,7 @@
     "margin-bottom":-10,
    // "margin-top":-2,
     "modules-left": ["hyprland/workspaces"],
-    "modules-right": ["custom/audio_idle_inhibitor", "tray",  "pulseaudio" , "battery", "custom/notification", "clock"],
+    "modules-right": ["tray", "custom/audio_idle_inhibitor",  "pulseaudio" , "network", "battery", "custom/notification", "clock"],
     "modules-center": ["custom/waybar-mpris"],
     // Modules configuration
 
@@ -147,11 +147,11 @@
     },
     "network": {
          "interface": "wlan0",
-        "format-wifi":  " {signalStrength}% 󰤨 ",
-        "format-disconnected": " Offline 󰤭 ",
+        "format-wifi":  " 󰤨 ",
+        "format-disconnected": " 󰤭 ",
         "tooltip-format": "{ifname} via {gwaddr} 󰱶",
         "tooltip-format-wifi": "{essid}",
-        //"on-click": "~/.config/hypr/scripts/rofi-wifi-menu"
+        "on-click": "sleep 0.1; rofi-wifi-menu"
     },
     "custom/notification": {
         "tooltip": false,

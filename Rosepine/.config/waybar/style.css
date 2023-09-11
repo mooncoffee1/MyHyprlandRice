@@ -217,12 +217,12 @@ window#waybar {
 
 #network.disabled {
     background-color: @base;
-    color: @love;
+    color: @iris;
 }
 
 #network.disconnected {
     background: @base;
-    color: @sky;
+    color: @foam;
     font-weight: bolder;
     padding-top: 3px;
     padding-right: 11px;
@@ -231,7 +231,7 @@ window#waybar {
 #network.linked,
 #network.wifi {
     background-color: @base;
-    color: @love;
+    color: @gold;
 }
 
 #network.ethernet {
