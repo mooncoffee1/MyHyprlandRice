@@ -9,13 +9,18 @@
 
 /*****----- Configuration -----*****/
 configuration {
-	modi:                       "drun,emoji,run";
+	modi:                       "drun,emoji,calc";
     show-icons:                 false;
     display-drun:               "󰀻";
-    display-run:                "󱆃";
-    display-emoji:              "󰇲";
-    display-window:             "";
-    display-calc:               "󰃬";
+    display-run:                " ";
+    display-filebrowser:        " ";
+    display-window:             " ";
+    display-emoji:             "󰄛";
+    display-calc:             "󰪚";
+
+
+    display-power-menu-rofi-power-menu:             " ";
+
 	drun-display-format:        "{name}";
 	window-format:              "{w} · {c} · {t}";
 }
@@ -65,7 +70,7 @@ window {
     enabled:                     true;
     margin:                      0px;
     padding:                     0px;
-    border:                      0px solid;
+    border:                      3px solid;
     border-radius:               10px;
     border-color:                @border-colour;
     cursor:                      "default";
@@ -87,8 +92,8 @@ mainbox {
     spacing:                     10px;
     margin:                      0px;
     padding:                     30px;
-    border:                      2px solid;
-    border-radius:               9px;
+    border:                      0px solid;
+    border-radius:               10px;
     border-color:                @border-colour;
     background-color:            transparent;
     children:                    [ "inputbar", "message", "listview" ];
@@ -101,7 +106,7 @@ inputbar {
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
-    border-radius:               10px;
+    border-radius:               0px;
     border-color:                @border-colour;
     background-color:            transparent;
     text-color:                  @foreground-colour;
@@ -254,7 +259,7 @@ mode-switcher{
     enabled:                     true;
     spacing:                     10px;
     margin:                      0px;
-    padding:                     10px;
+    padding:                     0px;
     border:                      0px solid;
     border-radius:               0px;
     border-color:                @border-colour;
@@ -291,7 +296,7 @@ textbox {
     border:                      0px solid;
     border-radius:               10px;
     border-color:                @border-colour;
-    background-color:            @alternate-background;
+    background-color:            transparent;
     text-color:                  @foreground-colour;
     vertical-align:              0.5;
     horizontal-align:            0.0;
@@ -302,7 +307,7 @@ textbox {
 }
 error-message {
     padding:                     10px;
-    border:                      2px solid;
+    border:                      0px solid;
     border-radius:               10px;
     border-color:                @border-colour;
     background-color:            @background-colour;

@@ -21,7 +21,7 @@
   "fit-to-screen": true,
   "relative-timestamps": true,
   "control-center-width": 500,
-  //"control-center-height": 600,
+//  "control-center-height": 200,
   "notification-window-width": 430,
 
   "keyboard-shortcuts": true,
@@ -43,14 +43,12 @@
   },
   
   "widgets": [
-    "menubar#label",
     "dnd",
     "inhibitors",
-    "label",
-    "backlight",
-    "volume",
     "title",
     "notifications",
+    "backlight",
+    "volume",
     "mpris"
    ],
    "widget-config": {
@@ -81,23 +79,12 @@
            }
          ]
      },
-     "buttons-grid#amogus": {
-       "actions": [
-         {
-           "label": " 󰏘 ",
-           "command": "swaync-client -t -sw && nwg-look"
-         },
-         {
-           "label": " 󰂯 ",
-           "command": "swaync-client -t -sw && blueman-manager"
-         }
-       ]
-     },
+
      "buttons#topbar-buttons": {
-         "position": "left",
+         "position": "right",
          "actions": [
            {
-             "label": " 󰿁 ",
+             "label": " 󰋩 ",
              "command": "swaync-client -t -sw && sh .config/hypr/scripts/wall"
            }
          ]

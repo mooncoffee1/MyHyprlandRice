@@ -15,7 +15,7 @@ window#waybar {
     color: @text;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-right: 10px;
+    margin-right: 0px;
     margin-left: 25px;
 }
 
@@ -70,7 +70,7 @@ window#waybar {
     }
 }
 
-
+#hyprland-submap,
 #custom-waybar-mpris,
 #user,
 #window,
@@ -128,7 +128,7 @@ window#waybar {
 
 
 #custom-audio_idle_inhibitor {
- color: @pine;
+ color: @gold;
  background: @base;
  box-shadow: rgba(0, 0, 0, 0.200) 2 2 5 2px;
 

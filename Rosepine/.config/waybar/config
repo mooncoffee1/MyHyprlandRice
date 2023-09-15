@@ -9,8 +9,8 @@
     "margin-right":-10,
     "margin-bottom":-10,
    // "margin-top":-2,
-    "modules-left": ["hyprland/workspaces"],
-    "modules-right": ["custom/audio_idle_inhibitor", "tray", "pulseaudio" , "battery", "custom/notification", "clock"],
+    "modules-left": ["hyprland/workspaces","custom/audio_idle_inhibitor"],
+    "modules-right": [ "tray", "pulseaudio" , "battery", "custom/notification", "clock"],
     "modules-center": ["custom/waybar-mpris"],
     // Modules configuration
 
@@ -24,6 +24,12 @@
         "separate-outputs": true
     },
     
+    "hyprland/submap": {
+        "format": "✌️ {}",
+        "max-length": 8,
+        "tooltip": false
+    },
+
     // custom modules //
     "custom/cycle_wall":{
         "format":"  󰊠  ",
@@ -47,6 +53,13 @@
             // "on-scroll-up": "waybar-mpris --send next",
             // "on-scroll-down": "waybar-mpris --send prev",
         "escape": true,
+    },
+
+    "jack": {
+        "format": "DSP {}%",
+        "format-xrun": "{xruns} xruns",
+        "format-disconnected": "DSP off",
+        "realtime": true
     },
 
     "custom/audio_idle_inhibitor": {
@@ -91,7 +104,7 @@
         "interval": 60,
         "format": "{:%H:%M}",
         "max-length": 25,
-        "on-click": "sleep 0.1; foot calcure"
+        "on-click": "sleep 0.1; ~/.config/hypr/scripts/wall"
     },
     "cpu": {
         "interval":1,
@@ -174,7 +187,7 @@
         "return-type": "json",
         "exec-if": "which swaync-client",
         "exec": "swaync-client -swb",
-        "on-click": ".config/hypr/scripts/swaync",
+        "on-click": "sleep 0.1s && swaync-client -t -sw",
       //  "on-click-right": "sleep 0.1 && swaync-client -d -sw",
         "escape": true
       }
