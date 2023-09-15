@@ -1,12 +1,17 @@
+
+/**
+ *
+ * Author : Levi Lacoss (fishyfishfish55)
+ * Github : @fishyfishfish55
+ *
+ * Colors
+ **/
+
 * {
-    BG:    #191724;
-    BGA:   #ebbcba;
-    FG:    #e0def4;
-    FGA:   #eb6f92;
-    BDR:   #31748f;
-    SEL:   #1E1E2Eff;
-    UGT:   #F28FADff;
-    IMG:   #eb6f92;
-    OFF:   #c4a7e7;
-    ON:    #ABE9B3ff;
+    background:     #191724;
+    background-alt: #26233a;
+    foreground:     #e0def4;
+    selected:       #EA9A97;
+    active:         #31748f;
+    urgent:         #F7768EFF;
 }

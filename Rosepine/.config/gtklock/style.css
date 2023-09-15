@@ -1,0 +1,47 @@
+window {
+	font-family: 'Iosevka', sans-serif; /* Add Iosevka font here */
+
+}
+
+#window-box {
+	padding: 40px;
+	border: 2px solid #EA9A97;
+	border-radius: 20px;
+	color: #EA9A97;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+	background-color: #191724;
+}
+
+#input-label {
+	color: #EA9A97;
+}
+
+#clock-label {
+	font-size: 40px;
+	padding-bottom: 10px;
+	font-family: 'Iosevka', sans-serif; /* Add Iosevka font here */
+}
+
+#error-label {
+	color: #E96E91;
+}
+
+#input-field {
+
+}
+
+#unlock-button {
+	background-color: #EA9A97;
+	color: #191724;
+}
+#unlock-button:active {
+	background-color: #191724;
+	color: #EA9A97;
+}
+
+#content{
+	border-radius: 20px;
+}
+#revealer {
+	background-color: red;
+}

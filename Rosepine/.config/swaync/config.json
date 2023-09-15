@@ -97,8 +97,8 @@
          "position": "left",
          "actions": [
            {
-             "label": " 󰆞 ",
-             "command": "swaync-client -t -sw && sh .config/hypr/scripts/screenshot"
+             "label": " 󰿁 ",
+             "command": "swaync-client -t -sw && sh .config/hypr/scripts/wall"
            }
          ]
        }

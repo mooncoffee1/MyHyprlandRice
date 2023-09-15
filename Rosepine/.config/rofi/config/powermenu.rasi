@@ -8,7 +8,7 @@ configuration {
 }
 
 @import "font.rasi"
-@import "colors.rasi"
+@import "colors2.rasi"
 
 /* Line Responsible For Button Layouts */
 /* BUTTON = TRUE */

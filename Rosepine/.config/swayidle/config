@@ -1,7 +1,7 @@
-timeout 120 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'
-timeout 125 'swaylock -f'
+timeout 120 'chayang && hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'
+timeout 125 'gtklock -d -T 10 -H'
 timeout 300 'systemctl suspend'
-before-sleep 'swaylock -f'
+before-sleep 'gtklock -d -T 10 -H'
 
 
 

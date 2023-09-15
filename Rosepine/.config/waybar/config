@@ -10,7 +10,7 @@
     "margin-bottom":-10,
    // "margin-top":-2,
     "modules-left": ["hyprland/workspaces"],
-    "modules-right": ["tray", "custom/audio_idle_inhibitor",  "pulseaudio" , "network", "battery", "custom/notification", "clock"],
+    "modules-right": ["custom/audio_idle_inhibitor", "tray", "pulseaudio" , "battery", "custom/notification", "clock"],
     "modules-center": ["custom/waybar-mpris"],
     // Modules configuration
 
@@ -39,7 +39,7 @@
         "exec": "waybar-mpris --position --autofocus --pause 󰏤 --play 󰐊",
         "on-click": "sleep 0.1; waybar-mpris --send toggle",
         // This option will switch between players on right click.
-            "on-click-right": "playerctl next",
+            "on-click-right": "sleep 0.1; playerctl next",
         // The options below will switch the selected player on scroll
             // "on-scroll-up": "waybar-mpris --send player-next",
             // "on-scroll-down": "waybar-mpris --send player-prev",
@@ -130,7 +130,7 @@
         "format": "{volume} {icon}",
         "format-bluetooth": "{volume} {icon}",
         "format-bluetooth-muted": "off 󰋋",
-        "format-muted": "off 󰝟",
+        "format-muted": "󰝟",
         "format-icons": {
             "headphone": "󰋋",
             "hands-free": "",
@@ -140,22 +140,27 @@
             "car": "󰸛",
             "default": ["󰕿", "󰖀", "󰕾"]
         },
-        "on-click-right": "pavucontrol",
-      "on-click": "sleep 0.1; ~/.config/hypr/scripts/volume --toggle",
-      "on-scroll-down": "sleep 0.1; ~/.config/hypr/scripts/volume --inc",
-      "on-scroll-up": "sleep 0.1; ~/.config/hypr/scripts/volume --dec",
+        "on-click-right": "sleep 0.1 && pavucontrol",
+      "on-click": "sleep 0.1 && ~/.config/hypr/scripts/volume --toggle",
+      "on-scroll-down": "sleep 0.1 && ~/.config/hypr/scripts/volume --inc",
+      "on-scroll-up": "sleep 0.1 && ~/.config/hypr/scripts/volume --dec",
     },
     "network": {
-         "interface": "wlan0",
-        "format-wifi":  " 󰤨 ",
-        "format-disconnected": " 󰤭 ",
-        "tooltip-format": "{ifname} via {gwaddr} 󰱶",
-        "tooltip-format-wifi": "{essid}",
-        "on-click": "sleep 0.1; rofi-wifi-menu"
+        "interface": "wlp2s0",
+        "format": "{ifname}",
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ifname} ",
+        "format-disconnected": "", //An empty format will hide the module.
+        "format-disconnected": "",
+        "tooltip-format": "{ifname}",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
     },
     "custom/notification": {
         "tooltip": false,
-        "format": "{} {icon}",
+        "format": "{icon}",
         "format-icons": {
           "notification": "󱅫",
           "none": "󰂚",
@@ -169,8 +174,8 @@
         "return-type": "json",
         "exec-if": "which swaync-client",
         "exec": "swaync-client -swb",
-        "on-click": "sleep 0.1; swaync-client -t -sw",
-        "on-click-right": "sleep 0.1; swaync-client -d -sw",
+        "on-click": ".config/hypr/scripts/swaync",
+      //  "on-click-right": "sleep 0.1 && swaync-client -d -sw",
         "escape": true
       }
 },
