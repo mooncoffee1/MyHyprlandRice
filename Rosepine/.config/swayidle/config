@@ -1,6 +1,6 @@
 timeout 120 'chayang && hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'
 timeout 125 'gtklock -d -T 10 -H'
-timeout 300 'systemctl suspend'
+timeout 240 'systemctl suspend'
 before-sleep 'gtklock -d -T 10 -H'
 
 

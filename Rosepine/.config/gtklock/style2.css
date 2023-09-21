@@ -1,0 +1,32 @@
+window {
+	font-family: 'Iosevka';
+
+}
+
+#window-box {
+	padding: 40px;
+	border: 2.5px solid #EA9A97;
+	border-radius: 20px;
+	color: #EA9A97;
+	box-shadow: #1f1d2e 0px 4px 12px;
+	background-color: #191724;
+}
+
+#input-label {
+	color: #e0def4;
+	font-weight: bold;
+}
+
+#clock-label {
+	font-size: 40px;
+	font-weight: bold;
+	padding-bottom: 0px;
+}
+
+#error-label {
+	color: #E96E91;
+}
+
+#input-field {
+	font-size: 12px;
+}

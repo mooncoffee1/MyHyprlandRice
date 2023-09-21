@@ -1,37 +1,7 @@
-/*
-*
-* Rosepine palette
-*
-*/
-
-@define-color base   #191724;
-@define-color surface #1f1d2e;
-
-
-@define-color text     #e0def4;
-@define-color subtle    #908caa;
-@define-color muted     #6e6a86;
-
-
-@define-color overlay #26233a;
-
-
-@define-color love      #eb6f92;
-@define-color gold      #f6c177;
-@define-color rose      #ebbcba;
-@define-color pine      #31748f;
-@define-color foam      #9ccfd8;
-@define-color iris      #c4a7e7;
-
-@define-color highlow   #21202e;
-@define-color highmed   #403d52;
-@define-color highhigh  #524f67;
-
-
 window {
-    margin: 5px;
-    border: 5px solid @base; /* Border color */
-    background-color: @rose; /* Background color */
+    margin: 0px;
+    border: 2px solid #E0B3B3;
+    background-color: rgba(24, 22, 34, 0.3);
     border-radius: 15px;
 }
 
@@ -40,27 +10,26 @@ window {
     margin: 4px;
     padding-left: 20px;
     border: none;
-    color: @base; /* Text color */
+    color: #E0B3B3;
     font-weight: bold;
-    background-color: @overlay; /* Background color */
-    background: linear-gradient(90deg, @love 0%, @rose 100%); /* Background gradient */
-    outline: none;
-    border-radius: 15px;
+    background-color: rgba(24, 22, 34, 0.2);
+   	outline: none;
+    border-radius: 16px;
     margin: 10px;
     margin-bottom: 2px;
 }
-
 #input:focus {
-    border: 0px solid @pine; /* Border color on focus */
+    border: 0px solid transparent;
     margin-bottom: 0px;
+    color: #E0B3B3;
 }
 
 #inner-box {
     margin: 4px;
-    border: 10px solid @overlay; /* Border color */
-    color: @pine; /* Text color */
+    border: 10px solid transparent;
+    color: #D7ADAB;
     font-weight: bold;
-    background-color: @overlay; /* Background color */
+    background-color: transparent;
     border-radius: 15px;
 }
 
@@ -68,7 +37,9 @@ window {
     margin: 0px;
     border: none;
     border-radius: 15px;
-    background-color: @overlay; /* Background color */
+    background-color: transparent;
+    
+    
 }
 
 #scroll {
@@ -76,13 +47,20 @@ window {
     border: none;
     border-radius: 15px;
     margin-bottom: 5px;
+    /* background: rgb(255,255,255); */
+}
+
+#img:selected {
+    background-color: transparent;
+    border-radius: 15px;
 }
 
 #text:selected {
-    color: @overlay; /* Text color */
+    color: #191724;
     margin: 0px 0px;
     border: none;
     border-radius: 15px;
+    background-color: transparent;
 }
 
 #entry {
@@ -90,11 +68,13 @@ window {
     border: none;
     border-radius: 15px;
     background-color: transparent;
+    
 }
 
 #entry:selected {
+    
     margin: 0px 0px;
     border: none;
     border-radius: 15px;
-    background: linear-gradient(45deg, @love 30%, @rose 100%); /* Background gradient */
+    background-color:#D7ADAB;
 }

@@ -1,16 +1,16 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 51, // Waybar height (to be removed for auto height)
+    "height": 52, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 2, // Gaps between modules (4px)
     // Choose the order of the modules
     "margin-left":-10,
     "margin-right":-10,
-    "margin-bottom":-10,
-   // "margin-top":-2,
+   // "margin-bottom":-10,
+    "margin-top":-5,
     "modules-left": ["hyprland/workspaces","custom/audio_idle_inhibitor"],
-    "modules-right": [ "tray", "pulseaudio" , "battery", "custom/notification", "clock"],
+    "modules-right": [ "tray", "pulseaudio" , "backlight","battery", "custom/notification", "clock"],
     "modules-center": ["custom/waybar-mpris"],
     // Modules configuration
 
@@ -160,6 +160,7 @@
     },
     "network": {
         "interface": "wlp2s0",
+        "on-click": "sleep 0.1 && wofi-wifi-menu",
         "format": "{ifname}",
         "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ifname} ",

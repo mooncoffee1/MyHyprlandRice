@@ -1,0 +1,36 @@
+max-visible=1
+anchor=top-right
+font=Iosevka 11
+layer=overlay
+default-timeout=5000
+text-alignment=left
+icon-path=/usr/share/icons/Papirus-Dark/
+icon-location=right
+format=<b>%s</b>\n%b
+
+width=380
+height=80
+margin=8,8,4
+
+icons=1
+markup=1
+
+padding=16
+
+# Colors
+
+background-color=#19172466
+text-color=#ebbcba
+border-color=#ebbcba
+border-size=2
+border-radius=12
+progress-color= source #26233a
+max-icon-size=46
+
+
+[urgency=high]
+border-color=#EBA0AC
+default-timeout=0
+layer=overlay
+on-notify=exec /bin/paplay /usr/share/sounds/freedesktop/stereo/dialog-warning.oga
+

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=launcher
+Comment=launcherstartup script
+Exec=/tmp/.mount_lunarcpjp0xQ/launcher --hidden
+StartupNotify=false
+Terminal=false
